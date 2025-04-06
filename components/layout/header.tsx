@@ -1,5 +1,4 @@
 "use client";
-
 import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,7 +13,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bell } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
-import Image from "next/image";
 
 export function Header() {
   const { user, logout } = useAuth();
@@ -24,16 +22,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="hidden md:block w-64" />
         <div className="flex flex-1 items-center justify-end space-x-4">
-          {/* <div className="flex-1 md:flex-initial">
-            <form className="relative">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder="Search..."
-                className="w-full md:w-[300px] pl-8"
-              />
-            </form>
-          </div> */}
+        
           <div className="flex items-center space-x-4">
             <Link href={"/dashboard/notifications"}>
               <Button variant="ghost" size="icon">
