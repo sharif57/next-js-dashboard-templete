@@ -55,7 +55,7 @@ export default function DashboardPage() {
               </CardTitle>
               <stat.icon className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
-            <CardContent>
+            <CardContent >
               <div className="text-2xl font-bold">{stat.value}</div>
               <div className="flex items-center text-xs">
                 {stat.trend === 'up' ? (
