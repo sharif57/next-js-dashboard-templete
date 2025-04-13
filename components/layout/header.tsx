@@ -18,11 +18,16 @@ export function Header() {
   const { user, logout } = useAuth();
 
   return (
-    <header className="sticky top-0 z-30 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-30 w-full border mt-4 rounded-lg border-red-400 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex  items-center justify-between">
+        <div className="text-start space-y-0.5 p-4">
+          <p className="text-sm md:text-xl font-light">
+            {"Welcome, Jane Cooper"}
+          </p>
+          <p className="text-sm md:text-xl">{"Have a nice day!"}</p>
+        </div>
         <div className="hidden md:block w-64" />
         <div className="flex flex-1 items-center justify-end space-x-4">
-        
           <div className="flex items-center space-x-4">
             <Link href={"/dashboard/notifications"}>
               <Button variant="ghost" size="icon">
