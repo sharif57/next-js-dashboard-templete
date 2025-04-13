@@ -105,8 +105,8 @@ export function Sidebar() {
                       <Link
                         href={item.href}
                         className={cn(
-                          "flex items-center p-3 rounded-lg hover:bg-accent group",
-                          isActive && "bg-accent"
+                          "flex items-center p-3 rounded-lg hover:bg-red-300 group",
+                          isActive && "bg-red-500"
                         )}
                       >
                         <item.icon className="w-5 h-5" />
